@@ -4,9 +4,10 @@
   "private": true,
   "packageManager": "pnpm@10.17.1",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node api.js && next dev",
+    "build": "node api.js && next build",
+    "export": "next build && next export",
+    "start": "node api.js && next start",
     "lint": "eslint ."
   },
   "dependencies": {
@@ -26,6 +27,10 @@
     "typescript": "5.9.3"
   },
   "pnpm": {
-    "onlyBuiltDependencies": ["@tailwindcss/oxide", "sharp", "unrs-resolver"]
+    "onlyBuiltDependencies": [
+      "@tailwindcss/oxide",
+      "sharp",
+      "unrs-resolver"
+    ]
   }
 }
