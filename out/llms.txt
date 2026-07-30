@@ -1,0 +1,43 @@
+# Edriva Global
+
+> Edriva Global is an international education consultancy helping students research and prepare for study opportunities abroad through personalised, transparent guidance.
+
+Official website: https://edrivaglobal.com
+Primary language: English
+Contact: info@edrivaglobal.com
+
+## Core Services
+
+- [University Selection](https://edrivaglobal.com/services/university-selection): Personalised university and program shortlisting.
+- [Application Support](https://edrivaglobal.com/services/application-support): Guidance with application documents, timelines and submissions.
+- [Scholarship Guidance](https://edrivaglobal.com/services/scholarships): Help finding and preparing for relevant funding opportunities.
+- [Visa Assistance](https://edrivaglobal.com/services/visa-assistance): Student visa documentation and application-readiness support.
+- [SOP and CV Support](https://edrivaglobal.com/services/sop-cv): Guidance for clear, authentic application documents.
+- [Pre-Departure Support](https://edrivaglobal.com/services/pre-departure): Practical preparation for travel and arrival.
+
+## Study Destinations
+
+- [Germany](https://edrivaglobal.com/destinations/germany)
+- [Italy](https://edrivaglobal.com/destinations/italy)
+- [United Kingdom](https://edrivaglobal.com/destinations/uk)
+- [United States](https://edrivaglobal.com/destinations/usa)
+- [Canada](https://edrivaglobal.com/destinations/canada)
+- [Australia](https://edrivaglobal.com/destinations/australia)
+- [Netherlands](https://edrivaglobal.com/destinations/netherlands)
+- [France](https://edrivaglobal.com/destinations/france)
+
+## Important Accuracy Notes
+
+- Edriva Global does not guarantee admission, scholarships or visas.
+- Admissions, tuition, scholarship and visa requirements can change.
+- Applicants should verify current requirements through official university and government sources.
+- Universities displayed for exploration do not imply official partnerships unless explicitly stated.
+- Testimonials labelled as demo content are placeholders and must not be treated as verified student claims.
+
+## Additional Resources
+
+- [About Edriva Global](https://edrivaglobal.com/about)
+- [Student Journey](https://edrivaglobal.com/student-journey)
+- [Contact](https://edrivaglobal.com/contact)
+- [Full AI Context](https://edrivaglobal.com/llms-full.txt)
+- [XML Sitemap](https://edrivaglobal.com/sitemap.xml)
