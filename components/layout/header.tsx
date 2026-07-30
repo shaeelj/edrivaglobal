@@ -9,6 +9,7 @@ import { siteConfig } from "@/config/site";
 
 export function Header() {
   const [open, setOpen] = useState(false);
+  const [openGroup, setOpenGroup] = useState<string | null>(null);
   const [compact, setCompact] = useState(false);
 
   useEffect(() => {
@@ -24,6 +25,10 @@ export function Header() {
     return () => { document.body.style.overflow = ""; window.removeEventListener("keydown", onKey); };
   }, [open]);
 
+  useEffect(() => {
+    if (!open) setOpenGroup(null);
+  }, [open]);
+
   return (
     <header className={`site-header ${compact ? "is-compact" : ""}`}>
       <div className="header-inner">
@@ -33,8 +38,38 @@ export function Header() {
         </Link>
         <nav className={`main-nav ${open ? "is-open" : ""}`} aria-label="Main navigation">
           <Link href="/">Home</Link>
-          <div className="nav-group"><Link href="/destinations">Study Destinations <ChevronDown /></Link><div className="nav-dropdown">{destinations.map((item) => <Link key={item.slug} href={`/destinations/${item.slug}`}>{item.name}</Link>)}</div></div>
-          <div className="nav-group"><Link href="/services">Services <ChevronDown /></Link><div className="nav-dropdown">{services.map((item) => <Link key={item.slug} href={`/services/${item.slug}`}>{item.title}</Link>)}</div></div>
+          <div className={`nav-group ${openGroup === 'destinations' ? 'is-open' : ''}`}>
+            <Link
+              href="/destinations"
+              onClick={(e) => {
+                if (window.innerWidth <= 900) {
+                  e.preventDefault();
+                  setOpenGroup(openGroup === 'destinations' ? null : 'destinations');
+                } else {
+                  setOpen(false);
+                }
+              }}
+            >
+              Study Destinations <ChevronDown />
+            </Link>
+            <div className="nav-dropdown">{destinations.map((item) => <Link key={item.slug} href={`/destinations/${item.slug}`}>{item.name}</Link>)}</div>
+          </div>
+          <div className={`nav-group ${openGroup === 'services' ? 'is-open' : ''}`}>
+            <Link
+              href="/services"
+              onClick={(e) => {
+                if (window.innerWidth <= 900) {
+                  e.preventDefault();
+                  setOpenGroup(openGroup === 'services' ? null : 'services');
+                } else {
+                  setOpen(false);
+                }
+              }}
+            >
+              Services <ChevronDown />
+            </Link>
+            <div className="nav-dropdown">{services.map((item) => <Link key={item.slug} href={`/services/${item.slug}`}>{item.title}</Link>)}</div>
+          </div>
           <Link href="/universities">Universities</Link>
           <Link href="/scholarships">Scholarships</Link>
           <Link href="/student-journey">Student Journey</Link>
